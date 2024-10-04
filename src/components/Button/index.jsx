@@ -1,6 +1,11 @@
 import React from 'react';
 function Button({ label, onClick }) {
-    return <button onClick={onClick}>{label}</button>;
+    const handleClick = () => {
+        // onClick();
+        onClick();
+    };
+
+    return <button onClick={handleClick}>{`${label}`}</button>;
 }
 
 export default Button;
