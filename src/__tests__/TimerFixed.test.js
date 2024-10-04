@@ -28,3 +28,7 @@ test('renders timer and updates every second', () => {
     // Kiểm tra giá trị sau 3 giây
     expect(secondsElement).toHaveTextContent('Seconds: 3');
 });
+
+// Đây là test case tương tự như trên nhưng sử dụng TimerFixed thay vì Timer.
+//Vì TimerFixed xóa interval khi component bị hủy và có dependency trong useEffect, nên test case trên sẽ pass.//
+//Ta chạy lệnh npm test -- src/__tests__/TimerFixed.test.js để kiểm tra kết quả.//
