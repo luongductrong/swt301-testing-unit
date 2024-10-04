@@ -13,6 +13,9 @@ test('calls onClick when button is clicked', () => {    // Test case với mô t
 });
 
 // Trong test case trên, chúng ta sử dụng jest.fn() để theo dõi việc gọi hàm handleClick.
+
+// jest.fn() là một hàm mock giả lập một hàm khác và theo dõi việc gọi hàm đó.
+
 // Sau đó, chúng ta render component Button với props onClick là hàm handleClick.
 // Tiếp theo, chúng ta lấy button theo nội dung "Click me" và kích hoạt sự kiện click vào button bằng fireEvent.click(buttonElement).
 // Cuối cùng, chúng ta kiểm tra hàm handleClick được gọi 1 lần bằng expect(handleClick).toHaveBeenCalledTimes(1).

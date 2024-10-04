@@ -40,6 +40,8 @@ test('renders timer and updates every second', () => {  // Test case kiểm tra 
 // Với cách này, chúng ta có thể kiểm tra xem component Timer có cập nhật giá trị mỗi giây hay không.
 // Đồng thời, chúng ta cũng có thể kiểm tra giá trị của timer sau mỗi khoảng thời gian nhất định.
 
+// jest.useFakeTimers() là một hàm mock giả lập timers trong Jest.
+
 //Vì Timer không xóa interval khi component bị hủy và không có dependency trong useEffect,
 // dẫn đến xuất hiện nhiều interval và giá trị seconds không chính xác.//
 //Vì vậy test case trên sẽ fail.//
