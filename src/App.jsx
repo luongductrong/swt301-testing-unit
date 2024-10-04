@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import Button from "./components/Paragraph";
-import Timer from "./components/Timer";
+import ButtonEventFixed from "./components/ButtonEventFixed";
+import TimerFixed from "./components/TimerFixed";
 
 const App = () => {
     const [click, setClick] = useState(false);
 
     return (
         <>
-        <Button label="Click me" onClick={() => setClick(!click)} />
-        {click && <Timer />}
+        <ButtonEventFixed onClick={() => setClick(!click)} />
+        {click && <TimerFixed />}
         </>
     );
 };
