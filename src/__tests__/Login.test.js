@@ -11,7 +11,7 @@ describe('Login Component', () => { // Test Suite cho component Login, test suit
   });
 
   test('submits login form and displays request and response', async () => { // Test case này kiểm tra việc submit form đăng nhập và hiển thị request và response
-    const mockResponse = { message: 'Đăng nhập thành công!' }; // Mock response từ API
+    const mockResponse = { token: '*********', userName: "abc", fullname: "Tran Van A" }; // Mock response từ API
     
     
     fetch.mockResolvedValueOnce({                 // Mock fetch API trả về giá trị sau khi gọi API
